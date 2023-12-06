@@ -182,7 +182,7 @@ int main(int argc, char *argv[])
 		return -1;
 	} 
 		
-	ros::Rate loop_rate(120);//设置循环频率为120Hz
+	ros::Rate loop_rate(200);//设置循环频率为200Hz, 有空的再处理
 
 	ser.flushInput();//在开始正式接收数据前先清除串口的接收缓冲区 	
 	memset(OneFrame, 0, sizeof(OneFrame));//清空gps字符串
